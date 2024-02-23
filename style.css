@@ -1,0 +1,84 @@
+:root {
+    --background-color: #010104;
+    --font-color: #ebe9fc;
+    --calculator-color: #205b7a;
+    --display-color: #a2bbcf;
+    --calc-controls-color: #17445c;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--font-color);
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    height: 98vh;
+}
+
+header {
+    font-size: 30px;
+}
+
+.calculator {
+    background-color: var(--calculator-color);
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    width: 300px;
+    height: 450px;
+}
+
+.calculator .display {
+    background-color: var(--display-color);
+    border-radius: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+    margin: 10px;
+    height: 15%;
+    font-size: 40px;
+    padding: 0 10px;
+    color: var(--background-color);
+}
+
+.calculator .edit-controls {
+    display: flex;
+    justify-content: center;
+    height: 15%;
+}
+
+.calculator .edit-controls button {
+    flex: 1;
+    border: 2px solid black;
+    border-radius: 12.5px;
+    margin: 10px;
+}
+
+.calculator #clearBtn {
+    margin-right: 5px;
+}
+
+.calculator #backspaceBtn {
+    margin-left: 5px;
+}
+
+.calculator .calculation-controls {
+    background-color: var(--calc-controls-color);
+    margin: 10px;
+    border-radius: inherit;
+    height: 55%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px;
+}
+
+.calculator .calculation-controls button {
+    border: 1px solid black;
+    width: 25%;
+}
